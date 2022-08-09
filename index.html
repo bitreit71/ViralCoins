@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/logos/g-logo/logo-1.PNG" type="image/x-icon"/>
+	<title>ViralCoins</title>
+</head>
+<body>
+	<div class="popups" id="popups">
+		<div class="popup-1 popup-window" id="myPopup-1" aria-hidden="true">
+			<div class="popups__close" aria-hidden="true">
+				<span></span>
+			</div>
+			<h2>Send request to scale your project to the next level</h2>
+			<div class="popup-1__container">
+				<div class="popup__container">
+					<div class="popup-1__form-container">
+						<form action="script.php" id="contact" method="post" class="popup-1__form">
+							<div class="form-data__form-contaiiner">
+								<input required placeholder="You name" type="text" id="name" name="name" class="popup-1__name">
+								<input required placeholder="Your telegram" type="text" id="phone" name="phone" class="popup-1__phone">
+								<input required placeholder="Your email" type="text" id="email" name="email" class="popup-1__email">
+								<input required placeholder="Your project website" type="text" id="describe" name="describe" class="popup-1__describe">
+								<div class="popup-1__radio">
+									<h3>Your promotion budget:</h3>
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice2"
+									     name="contact" value="phone">
+									     <label for="contactChoice1">$0-5K</label>
+								    </div>
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice3"
+									     name="contact" value="mail">    	
+									    <label for="contactChoice2">$5-10K</label>	   
+								    </div>
+								    <div class="popup-1__radio-input">
+										<input type="radio" id="contactChoice1" name="contact" value="email">
+									    <label for="contactChoice3">$10-25K</label>
+								    </div>
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice2"
+									     name="contact" value="phone"> 	    	
+									    <label for="contactChoice1">$25-50K</label> 	
+								    </div>
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice3"
+									     name="contact" value="mail">		    	
+									    <label for="contactChoice2">$50-100K</label>
+								    </div>
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice1"
+									     name="contact" value="email">		    	
+									    <label for="contactChoice3">$100-250K</label>
+								    </div>
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice2"
+									     name="contact" value="phone">		    	
+									    <label for="contactChoice1">$250-500K</label>
+								    </div>	
+								    <div class="popup-1__radio-input">
+									    <input type="radio" id="contactChoice2"
+									     name="contact" value="phone">   	
+										<label for="contactChoice2">$500K+</label>	
+								    </div>	
+								</div>
+								<textarea required placeholder="About yours project & goals" type="text" id="email" name="goals" rows="6" data-min-rows="6" class="popup-1__textarea"></textarea>	
+							</div>						
+							<button type="sumbit" id="send" class="form-data__window-button">Submit</button>
+						</form>			
+					</div>
+				</div>
+			</div>				
+		</div>
+		<div class="popup-2 popup-window" id="myPopup-2" aria-hidden="true">
+			<div class="popup-2__container">
+				<div class="popup-2__info">
+					<h3>Thank you partner!</h3>
+					<p>We will soon get in touch with you.</p>
+				</div>
+				<div class="popup-2__img-container">
+					<img src="img/people.png" alt="" class="popup-2__img">
+				</div>
+			</div>				
+		</div>										
+	</div>	
+	<header>
+		<section class="header">
+			<div class="header__container">
+				<a href="#"><img src="img/logos/g-logo/logo-2.PNG" alt="" class="header__logo"></a>
+				<div class="header__right">
+					<div class="header__button-container">
+						<button href="#" class="header__button btn-13" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Get in touch</button>
+					</div>
+					<div class="header__menu-button">
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<div class="header__menu-words">
+							<p class="header__menu-word">Menu</p>
+						</div>					
+					</div>
+					<div class="header__menu-close">
+						<div class="header__burger">
+							<span></span>
+						</div>							
+						<div class="header__menu-words">
+							<p class="header__menu-word">Close</p>			
+						</div>
+					</div>					
+				</div>									
+				<div class="header__menu-container">					
+					<ul class="header__menu">
+						<li><a href="#about-us">About us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#marketing">Why ViralCoins</a></li>
+						<li><a href="#questions">Questions</a></li>
+					</ul>			
+				</div>			
+			</div>
+		</section> 
+	</header>
+	<main>
+		<section class="general">							
+			<div class="general__container">
+				<div class="general__content-1">
+					<h1>Let’s make you go viral by boosting your community with ViralCoins</h1>
+					<p>End-to-end marketing solutions for crypto projects that brings you HODLers.</p>
+					<div class="general__button-container">
+						<button href="#" class="general__button btn-13" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Get your proposal</button>
+						<span class="general__contact-text">
+							or contact us on <a href="https://t.me/wherelambo1" class="general__link" target="_blank">Telegram</a>
+						</span>							
+					</div>			
+				</div>
+				<div class="general__content-2">
+					<img src="img/smartphones.png" alt="" class="general__img">
+				</div>						
+			</div>
+		</section>
+		<section class="two-blocks__bg">
+			<div class="about-us _anim-items" id="about-us">
+				<h2>About <span class="about-us__color-1">Us</span></h2>
+				<div class="about-us__container">
+					<div class="about-us__left-container">
+						<img src="img/viral-img.png" alt="" class="about-us__img">
+					</div>
+					<div class="about-us__right-container">
+						<h3>Make your success inevitable by enriching your business with <span class="about-us__color-2">ViralCoins</span></h3>
+						<span class="about-us__line"></span>
+						<p>
+							«Community is the only real currency in crypto. Community = success. ViralCoins bring you HODLers. That’s the main thing every crypto company needs for confident growth and that’s the main marketing goal without which everything else is pointless. No community — no demand. No community — no liquidity. No community — no successful IDO/IEO launch. No community — no money. That’s why ViralCoins only specialises in work reflected in community growth for your crypto project. Other marketing stuff would just take money out of your pocket
+						</p>
+						<span class="about-us__name">Yurii Burchak, founder</span>	
+					</div>			
+				</div>
+			</div>
+			<div class="two-text">
+				<div class="two-text__1">
+					<p>
+						<span>ViralCoins</span> is a community-oriented marketing and PR agency delivering turnkey solutions for successful crypto, DeFi, STO, ICO and IEO promotion
+					</p>	
+				</div>
+				<div class="two-text__line">
+					<img src="img/line-img.png" alt="" class="two-text__line-img">
+				</div>
+				<div class="two-text__2">
+					<p>
+						We work with utility and security tokens (STO and IEO/ICO), crypto exchanges, DeFi, blockchain and fintech projects. We are a launchpad that helps projects to get started, engage with the audience, and reach the long term goals.
+					</p>
+				</div>						
+			</div>			
+		</section>
+		<section class="facts">
+			<h2>We <span>in facts</span></h2>
+			<div class="facts__container">
+				<div class="facts__text-1">
+					<h3>50M+</h3>
+					<p>Crypto audience we have access to</p>
+				</div>
+				<div class="facts__text-2">
+					<h3>10+</h3>
+					<p>Marketing superstars on board</p>
+				</div>
+				<div class="facts__text-3">
+					<h3>94</h3>
+					<p>Net score based on feedback from our clients</p>
+				</div>				
+			</div>
+		</section>
+		<section class="form-data">
+			<div class="form-data__container">
+				<div class="form-data__info">
+					<h2>We’d love to hear about your project!</h2>
+					<p>We are the team of marketing experts that will support your business at all stages. Have an additional question about our crypto marketing agency packages? Feel free to get in touch with our account managers now.</p>
+					<span class="form-data__line"></span>
+				</div>
+				<div class="form-data__form-container">
+					<form action="script.php" id="contact" method="post" class="form-data__form">
+						<div class="form-data__form-contaiiner">
+							<input required placeholder="Enter your/project name" type="text" id="name" name="name" class="form-data__name">
+							<input required placeholder="Enter your phone" type="text" id="phone" name="phone" class="form-data__phone">
+						</div>
+						<div class="form-data__form-contaiiner">
+							<input required placeholder="Enter your email" type="text" id="email" name="email" class="form-data__email">
+							<input required placeholder="Describe your situation. How can we help you?" type="text" id="describe" name="describe" class="form-data__describe">
+						</div>						
+						<button type="sumbit" id="send" class="form-data__button">Discuss your project</button>
+					</form>			
+				</div>
+			</div>
+		</section>
+		<section class="services _anim-items" id="services" >
+			<h2>Services</h2>
+			<div class="services__container">
+				<div class="services__left">
+					<h3>We're the whole package</h3>
+					<span class="services__line"></span>
+					<p>End-to-end expertise across the crypto ecosystem. We know how to deliver high-performing marketing</p>
+					<img src="img/notebook.png" alt="" class="services__img">
+				</div>
+				<div class="services__right">
+					<h3>Turnkey community boost for cryptos</h3>
+					<span class="services-uppercase-text">
+						finest choise for to-the-moon results
+					</span>
+					<p>Gain your community by promoting your cryptocurrency project through the most impactful influencers and medias</p>
+					<h4>Massive marketing campaign:</h4>
+					<ul class="services__list">
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">YouTube bloggers</li>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Telegram channels</li>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Twitter influencers</li>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Instagram bloggers</li>
+						<h4 class="services__ul-text">
+							Add-on services to raise awareness on your project:
+						</h4>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Outreach to journalists, news portals and other media contacts</li>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Publish PRs about the project on authority media outlets</li>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Arrangement of interviews with cofounders</li>
+						<li><img src="img/icons/list-icon.png" alt="" class="services__icon">Targeted traffic generation</li>
+					</ul>
+					<button href="#" class="services__button btn-13" id="openMyPopup" data-popup="myPopup"s onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Get started today</button>
+				</div>
+			</div>
+		</section>
+		<section class="info-blocks">
+			<div class="info-blocks__top-container">
+				<div class="info-blocks__left">
+					<div class="info-blocks__block">
+						<h3>SMM & content creation</h3>
+						<p>Leverage the top social networks like Facebook. Twitter, Reddit, Linkedin, and Instagram to push communication to millions of people around the world. Most companies are either too busy or don't have the expertise to do it on their own <br><br><strong>Get the social media management that will boost your community!</strong></p>
+						<br><br>
+						<button type="sumbit" id="send" class="info-blocks__button-1" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Start now</button>	
+					</div>
+					<div class="info-blocks__block">
+						<h3>Website creation</h3>
+						<p>Get not only site. Get profit converter.ViralCoins Agency knows how a great website should look and function to attract investors. Get an affordable, fully adaptive website with a user-friendly interface and a high conversion rate<br><br><strong>Get powerful website which will increase your profit!</strong></p>
+						<br><br>
+						<button type="sumbit" id="send" class="info-blocks__button-2" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Start now</button>	
+					</div>					
+				</div>
+				<div class="info-blocks__right">
+					<div class="info-blocks__block">
+						<h3>NFT<br>promotion</h3>
+						<p>We drive all aspects of marketing strategies by setting up disruptive techniques and solutions according to the goals and peculiarities of your token.<br><br><strong>Join the NFT craze and stay on trend!</strong></p>
+						<br><br><br><br><br><br><br>
+						<button type="sumbit" id="send" class="info-blocks__button-3" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Start now</button>	
+					</div>
+					<div class="info-blocks__block">
+						<h3>DeFi promotion</h3>
+						<p>The idea and goal of any DeFi project is to make people’s lives easier and convenient. And don’t forget about users who pay with real money at their own risk. Trust to the project and community gain are the most important parts of the project’s success<br><br><strong>ViralCoins provide full range services for DeFi projects</strong></p>
+						<br><br>
+						<button type="sumbit" id="send" class="info-blocks__button-4" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Start now</button>	
+					</div>					
+				</div>
+			</div>
+			<div class="info-blocks__bottom-container"> 
+				<div class="info-blocks__bottom">
+					<div class="info-blocks__block">
+						<h3>ICO/IDO marketing</h3>
+						<p>ViralCoins marketing campaigns for ICO/IDO will make your blockchain project booming and growing with the support of new investors. Crypto startup developers often neglect this step of PR and promotion, losing in such a way a broad spectrum of important opportunities. Our specialists won’t let you make such a mistake!<br><br><strong>Get the liquidity you deserve on your lauch!</strong></p>
+						<br><br>
+						<button type="sumbit" id="send" class="info-blocks__button-5" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Start now</button>	
+					</div>					
+				</div>																
+			</div>
+		</section>
+		<section class="work">
+			<div class="work__container">
+				<div class="work__left-block">
+					<div class="work__left-top">
+						<h2>ViralCoins <span>work</span> for..</h2>
+						<span class="work__line"></span>
+						<p>We bring community to the following projects</p>
+					</div>
+					<div class="work__left-bottom">
+						<div class="work__tags-top">
+							<div class="work__tag-1">Crypto exchanges</div>
+							<div class="work__tag-2">Crypto wallets</div>
+							<div class="work__tag-3">Crypto startups</div>	
+							<div class="work__tag-4">Crypto service companies</div>
+							<div class="work__tag-5">IDO/ IEO projects</div>	
+						</div>
+						<div class="work__tags-bottom_1">
+							<div class="work__tag-6">FinTech companies</div>
+							<div class="work__tag-7">GameFi</div>
+							<div class="work__tag-8">Meme coins</div>
+							<div class="work__tag-9">AMM & yield farming</div>	
+						</div>
+					</div>					
+				</div>			
+			</div>
+		</section>
+		<section class="ready-project">
+			<div class="ready-project__container">
+				<h2>Are you ready to boost your project?</h2>
+				<button href="#" class="
+				ready-project__button btn-13" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup-1', event)" aria-controls="myPopup-1" aria-label="Open popup">Discuss your project</button>				
+			</div>
+		</section>
+		<section class="marketing" id="marketing">
+			<h2>Why choose <span>ViralCoins</span> for marketing stuff</h2>
+			<div class="marketing__container">
+				<div class="marketing__top-blocks">
+					<div class="marketing__top-block-1">
+						<img src="img/icons/list-icon.png" alt="" class="marketing__icon">
+						<div class="marketing__info">
+							<h3>Worthwhile collaboration</h3>
+							<p>We don’t offer low-cost marketing services — we get you community of HODLers that become your brand advocates. And that's worth every bitcoin invested in our collaboration</p>
+						</div>
+					</div>
+					<div class="marketing__top-block-2">
+						<img src="img/icons/list-icon.png" alt="" class="marketing__icon">
+						<div class="marketing__info">
+							<h3>Turnkey marketing solutions</h3>
+							<p>We create custom marketing strategy to meet your specific requirements and get you to-the-moon result and the team of marketing superstars implements your digital marketing strategy from scratch to desired goal</p>							
+						</div>						
+					</div>					
+				</div>
+				<div class="marketing__bottom-blocks">
+					<div class="marketing__bottom-block-1">
+						<img src="img/icons/list-icon.png" alt="" class="marketing__icon">
+						<div class="marketing__info">
+							<h3>24/7 top manager support</h3>
+							<p>Your personal manager is always ready to answer your questions and inform you about the current situation. In addition, you will have your own online dashboard to track our progress</p>
+						</div>						
+					</div>
+					<div class="marketing__bottom-block-2">
+						<img src="img/icons/list-icon.png" alt="" class="marketing__icon">
+						<div class="marketing__info">
+							<h3>50M+ crypto audience</h3>
+							<p>We have access to 50M+ audience interested in new investment possibilities willing to put the money on the table. We attract the valued public through proven media channels not the first time</p>							
+						</div>						
+					</div>					
+				</div>				
+			</div>
+		</section>
+		<section class="clients-1">
+			<h2>Our clients and partners</h2>
+			<div class="clients-1__container-1">
+				<img src="img/logos/logo-1.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-2.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-3.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-4.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-5.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-6.png" alt="" class="clients-1__img">
+			</div>
+			<div class="clients-1__container-2">
+				<img src="img/logos/logo-7.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-8.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-9.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-10.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-11.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-12.png" alt="" class="clients-1__img">
+			</div>
+			<div class="clients-1__container-3">
+				<img src="img/logos/logo-13.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-14.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-15.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-16.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-17.png" alt="" class="clients-1__img">
+				<img src="img/logos/logo-18.png" alt="" class="clients-1__img">
+			</div>						
+		</section>
+		<section class="clients-2">
+				<h2>Our clients and partners</h2>
+				<div class="clients-2__container">
+
+					<img src="img/logos/logo-1.png" alt="" class="clients-2__img">
+					<img src="img/logos/logo-2.png" alt="" class="clients-2__img">
+					<img src="img/logos/logo-3.png" alt="" class="clients-2__img">
+					<img src="img/logos/logo-4.png" alt="" class="clients-2__img">
+					<img src="img/logos/logo-5.png" alt="" class="clients-2__img">
+					<img src="img/logos/logo-6.png" alt="" class="clients-2__img">
+				</div>
+			</div>						
+		</section>
+		<section class="questions" id="questions">
+			<div class="questions__top">
+				<div class="questions__left-text">
+					<h2>Frequently <span>asked</span> questions</h2>				
+				</div>
+				<div class="questions__right-img">
+					<img src="img/ques.png" alt="" class="questions__img">
+				</div>
+			</div>			
+			<div class="questions__bottom">
+				<div class="questions__top-info">
+					<div class="questions__left-block">
+						<p class="questions__number">01.</p>
+						<h3 class="questions__title-1">How will our cooperation look like?</h3>
+						<span class="work__line"></span>
+						<p class="questions__description">Crypto/Web3 marketing is the process of attracting new users, investors, community members, and more to blockchain-related products and services. ViralCoins is here to manage the most successful crypto marketing campaigns reflected in community boost</p>
+					</div>
+					<div class="questions__right-block">
+						<p class="questions__number">02.</p>
+						<h3 class="questions__title-2">Can we completely externalize all marketing tasks and have you do them for us?</h3>
+						<span class="work__line"></span>
+						<p class="questions__description">Yes, you can. Our team of experts can completely take care of all marketing related services and processes. Let's first have a chat to understand the project, your needs, targets, and desires</p>
+					</div>						
+				</div>
+				<div class="questions__center-info">
+					<div class="questions__left-block">
+						<p class="questions__number">03.</p>
+						<h3 class="questions__title-3">How much does crypto marketing cost?</h3>
+						<span class="work__line"></span>
+						<p class="questions__description">The answer is it’s not cheap but worth every bitcoin invested! We create custom solutions based on client needs. But we all know that main need is community of HODLers that brings money for the project. That’s what we take care of. For a proposal please contact us!</p>
+					</div>
+					<div class="questions__right-block">
+						<p class="questions__number">04.</p>
+						<h3 class="questions__title-4">How can I pay for your marketing services?</h3>
+						<span class="work__line"></span>
+						<p class="questions__description">We have a wide range of payment methods accepted. You can pay with crypto or with popular fiat currencies such as US Dollars, Euros and British Pounds</p>
+					</div>						
+				</div>
+				<div class="questions__bottom-info">
+					<div class="questions__block">
+						<p class="questions__number">05.</p>
+						<h3 class="questions__title-4">I didn't find the service I'm looking for - what can I do?</h3>
+						<span class="work__line"></span>
+						<p class="questions__description">Book a "Free Consultation" directly from our website. Or, you can reach us by your preferred social media platform. One of our expert consultants will be there to support you</p>
+					</div>						
+				</div>					
+			</div>
+		</section>				
+		<section class="form-data">
+			<div class="form-data__container">
+				<div class="form-data__info">
+					<h2>We’d love to hear about your project!</h2>
+					<p>We are the team of marketing experts that will support your business at all stages. Have an additional question about our crypto marketing agency packages? Feel free to get in touch with our account managers now.</p>
+					<span class="about-us__line"></span>
+				</div>
+				<div class="form-data__form-container">
+					<form action="script.php" id="contact" method="post" class="form-data__form">
+						<div class="form-data__form-contaiiner">
+							<input required placeholder="Enter your/project name" type="text" id="name" name="name" class="form-data__name">
+							<input required placeholder="Enter your phone" type="text" id="phone" name="phone" class="form-data__phone">
+						</div>
+						<div class="form-data__form-contaiiner">
+							<input required placeholder="Enter your email" type="text" id="email" name="email" class="form-data__email">
+							<input required placeholder="Describe your situation. How can we help you?" type="text" id="describe" name="describe" class="form-data__describe">
+						</div>						
+						<button type="sumbit" id="send" class="form-data__button">Discuss your project</button>
+					</form>			
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section class="footer">
+			<div class="footer__container">
+				<div class="footer__left-block">
+					<div class="footer__info-left">
+						<img src="img/logos/g-logo/logo-3.png" alt="" class="footer__logo">
+						<h3>| Community growth for crypto projects</h3>
+					</div>
+					<p>2022 ALL RIGHTS RESERVED</p>	
+				</div>
+				<div class="footer__right-block">
+					<div class="footer__telegram">
+						<img src="img/icons/tg.png" alt="" class="footer__telegram-img">
+						<a href="https://t.me/wherelambo1" class="footer__telegram-link" target="_blank">wherelambo1</a>
+					</div>
+					<div class="footer__email">
+						<img src="img/icons/mail.png" alt="" class="footer__email-img">
+						<a href="mailto:info@viralcoins.agency" class="footer__email-link" target="_blank">info@viralcoins.agency</a>
+					</div>					
+				</div>
+			</div>	
+		</section>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
