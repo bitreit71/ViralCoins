@@ -357,7 +357,7 @@ h1 {
 .two-blocks__bg {
   background: url('../img/about-bg.png') no-repeat;
   padding: 70px 0;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .about-us {
@@ -440,7 +440,7 @@ h1 {
   font-family: 'OpenSans-Regular';
   font-weight: 800;
   font-size: 18px;
-  color: #000;  
+  color: #fff;  
 }
 
 .two-text {
@@ -481,8 +481,9 @@ h1 {
 
 .facts {
   background: url('../img/bg-facts.png') no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  padding: 128px 34px;
+  padding: 128px 34px 179px 34px;
 }
 
 .facts h2 {
@@ -491,7 +492,7 @@ h1 {
   font-family: 'Gilroy-Medium';
   font-size: 36px;
   text-transform: uppercase;
-  color: #000  
+  color: #000;
 }
 
 .facts span,
@@ -537,7 +538,7 @@ h1 {
 
 .form-data {
   background: url('../img/form-data.png') no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-color: #3C61E2;
 
   display: flex;
@@ -550,7 +551,7 @@ h1 {
   align-items: center;
   margin: 60px auto 0 auto; 
   padding: 0 34px;
-  max-width: 1460px;
+  max-width: 1471px;
   width: 100%;
 }
 
@@ -595,7 +596,7 @@ h1 {
 .form-data__form-container {
   position: relative;
   bottom: 50px;  
-  max-width: 778px;
+  max-width: 788px;
   width: 100%;
 }
 
@@ -604,27 +605,40 @@ h1 {
 .form-data__phone {
   margin-bottom: 21px;
   margin-right: 52px;
-  padding: 20px 24px 30px 6px;
+  padding: 20px 1px 28px 6px;
   width: 250px;
   background: none;
   border-bottom: 2px solid #fff;
-  font-family: 'OpenSans-Regular';
+  font-family: s'OpenSans-Regular';
   font-size: 18px;
   color: #fff;  
 }
 
+.form-data__email {
+  position: relative;
+  bottom: 35px;
+}
+
 ::placeholder {
+  width: 100%;
   font-family: 'OpenSans-Regular';
   font-size: 18px;
   color: #fff;  
 }
 
 .form-data__describe {
-  padding: 20px 24px 30px 6px;
-  max-width: 472px;
+  padding: 20px 2px 6px 6px;
+  max-width: 460px;
   width: 100%;
   background: none;
   border-bottom: 2px solid #fff;
+  font-family: 'OpenSans-Regular';
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-data__describe::palceholder {
+  width: 100%;
 }
 
 .form-data__button {
@@ -714,7 +728,8 @@ h1 {
 .services__right h3 {
   font-family: 'Gilroy-Medium';
   font-size: 24px;  
-  margin-bottom: 7px;
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
 .services__right p {
@@ -1432,7 +1447,7 @@ footer {
   right: 0;
   top: 17%;
   z-index: 1111;
-  padding: 0 30px;
+  padding: 0 12px;
   margin-left: auto;
   margin-right: auto;   
 }
@@ -1624,6 +1639,7 @@ footer {
 }
 
 ::placeholder {
+  width: 100%;
   font-family: 'Inter', sans-serif;
   color: #fff;
   font-size: 20px;
@@ -1682,6 +1698,7 @@ label {
 }
 
 .popup-1__textarea::placeholder {
+  width: 100%;
   position: relative;
 }
 
@@ -1936,9 +1953,9 @@ label {
   .clients-2 {
     display: block;
     padding: 116px 0;
-    background: url('../img/clients.png') no-repeat;
-    background-position-x: 0px;
-    background-size: 100% 100%;
+    background: url(../img/clients.png) no-repeat;
+    background-position-x: -6px;
+    background-size: cover;
   }
 
   .clients-2 h2 {
@@ -1981,6 +1998,7 @@ label {
 
   .services__right h4 {
     text-align: left;
+    line-height: 26px;
   }
 
   .services__img {
@@ -2151,6 +2169,14 @@ label {
 
 }
 
+@media only screen and (max-width: 834px) {
+
+  .form-data__email {
+    bottom: 0;
+  }
+
+}
+
 @media only screen and (max-width: 771px) {
 
   .general__img {
@@ -2223,13 +2249,19 @@ label {
     display: block;
   }
 
+  .form-data__name,
+  .form-data__email,
+  .form-data__phone {
+    padding: 24px 1px 21px 6px;
+  }
+
   .form-data__name, .form-data__email, .form-data__phone {
     width: 100%;
     margin: 0;
   }
 
   .form-data__describe {
-    padding: 27px 24px 30px 6px;
+    padding: 27px 24px 4px 6px;
     max-width: 702px;
     width: 100%;
   }
@@ -2239,7 +2271,6 @@ label {
   }
 
 }
-
 
 @media only screen and (max-width: 704px) {
 
@@ -2314,6 +2345,14 @@ label {
     max-width: 278px;
   }
 
+  .form-data__describe {
+    margin-top: 18px;
+    padding: 0 24px 23px 6px;
+    max-width: 702px;
+    width: 100%;
+    line-height: 32px;
+  }
+
 }
 
 @media only screen and (max-width: 468px) {
@@ -2372,6 +2411,10 @@ label {
     width: 100%;
   }
 
+  .facts {
+    padding: 128px 34px 120px 34px;
+  }
+
 }
 
 @media only screen and (max-width: 432px) {
@@ -2393,7 +2436,7 @@ label {
   }
 
   .popup-1 {
-    bottom: 91px;
+    bottom: 8px;
   }
 
   .popup-1 h2 {
@@ -2416,6 +2459,10 @@ label {
 }
 
 @media only screen and (max-width: 380px) {
+
+  .popup-1 {
+    bottom: 74px;
+  }
 
   .header__menu-button,
   .header__menu-close.active {
@@ -2450,7 +2497,7 @@ label {
   }
 
   .popup-1 {
-    padding: 54px 14px 25px 14px;
+    padding: 54px 14px 54px 14px;
   }
 
   .form-data__name, .form-data__email, .form-data__phone {
@@ -2465,8 +2512,4 @@ label {
   .footer {
     padding: 0;
   }
-
 }
-
-
-
