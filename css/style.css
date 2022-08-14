@@ -1222,14 +1222,22 @@ h1 {
 }
 
 .questions {
-  max-width: 1217px;
+  background: url(../img/bg-q.png) no-repeat;
+  background-size: cover;
+  max-width: 1920px;
   width: 100%;
-  margin: 69px auto 131px auto;
-  padding: 0 34px;
+  height: auto;
+  margin: 0 auto;
+  padding: 68px 34px 129px 34px;
 }
 
 .questions__container {
-  margin: 78px auto 0 auto;
+  max-width: 1217px;
+  width: 100%;  
+}
+
+.questions__container {
+  margin: 0 auto;
   max-width: 1145px;
   width: 100%;
 }
@@ -1840,7 +1848,7 @@ label {
 
   .questions {
     text-align: center;
-    margin: 89px auto 131px auto;
+    margin: 0 auto;
   } 
 
   .questions__top {
@@ -2512,4 +2520,5 @@ label {
   .footer {
     padding: 0;
   }
-}
+
+} 
