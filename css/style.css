@@ -616,7 +616,7 @@ h1 {
 
 .form-data__email {
   position: relative;
-  bottom: 35px;
+  bottom: 0;
 }
 
 ::placeholder {
@@ -627,7 +627,7 @@ h1 {
 }
 
 .form-data__describe {
-  padding: 20px 2px 6px 6px;
+  padding: 20px 2px 27px 6px;
   max-width: 460px;
   width: 100%;
   background: none;
